@@ -8,6 +8,15 @@ import android.util.Log;
 public class TimingTestOne {
     public static final String TAG = "TimingTest";
 
+    {
+        Log.d (TAG, "tto {} called");
+    }
+
+    public TimingTestOne() {
+        Log.d (TAG, "tto dynamic called");
+
+    }
+
     static {
         Log.d (TAG, "tto static called");
     }
