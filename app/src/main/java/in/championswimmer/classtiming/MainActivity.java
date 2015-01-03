@@ -14,17 +14,17 @@ public class MainActivity extends ActionBarActivity {
     public static final String TAG = "TimingTest";
 
     static {
-        Log.d(TAG, "before anything static" + SystemClock.uptimeMillis());
+        Log.d(TAG, "before anything static" + SystemClock.elapsedRealtimeNanos());
 
         TimingTestOne.gen100();
-        Log.d(TAG, "after gen100 static" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after gen100 static" + SystemClock.elapsedRealtimeNanos());
 
 
         TimingTestOne tto01 = new TimingTestOne();
-        Log.d(TAG, "after first  static" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after first  static" + SystemClock.elapsedRealtimeNanos());
 
         TimingTestOne tto02 = new TimingTestOne();
-        Log.d(TAG, "after second  static" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after second  static" + SystemClock.elapsedRealtimeNanos());
     }
 
 
@@ -35,16 +35,16 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d(TAG, "before anything" + SystemClock.uptimeMillis());
+        Log.d(TAG, "before anything" + SystemClock.elapsedRealtimeNanos());
 
         TimingTestOne.gen100();
-        Log.d(TAG, "after gen100" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after gen100" + SystemClock.elapsedRealtimeNanos());
 
         TimingTestOne tto1 = new TimingTestOne();
-        Log.d(TAG, "after first" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after first" + SystemClock.elapsedRealtimeNanos());
 
         TimingTestOne tto2 = new TimingTestOne();
-        Log.d(TAG, "after second" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after second" + SystemClock.elapsedRealtimeNanos());
 
 
     }
