@@ -70,7 +70,7 @@ public class TimingTestOne {
         String two = 2 + one;
         return two;
     }
-    public static void main(String[] args) {
+    public static void doDisplay(String[] args) {
         Log.d(TAG, "main called");
         display();
         gen1(); gen10(); gen100();

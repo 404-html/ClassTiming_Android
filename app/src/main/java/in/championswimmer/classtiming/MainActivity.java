@@ -16,6 +16,10 @@ public class MainActivity extends ActionBarActivity {
     static {
         Log.d(TAG, "before anything static" + SystemClock.uptimeMillis());
 
+        TimingTestOne.gen100();
+        Log.d(TAG, "after gen100 static" + SystemClock.uptimeMillis());
+
+
         TimingTestOne tto01 = new TimingTestOne();
         Log.d(TAG, "after first  static" + SystemClock.uptimeMillis());
 
@@ -32,6 +36,9 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Log.d(TAG, "before anything" + SystemClock.uptimeMillis());
+
+        TimingTestOne.gen100();
+        Log.d(TAG, "after gen100" + SystemClock.uptimeMillis());
 
         TimingTestOne tto1 = new TimingTestOne();
         Log.d(TAG, "after first" + SystemClock.uptimeMillis());
