@@ -29,4 +29,28 @@ public class TimingTestOne {
         int two = 2 * one;
         return two;
     }
+    String someFunction1 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
+    String someFunction2 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
+    String someFunction3 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
+    String someFunction4 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
+    String someFunction5 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
+    String someFunction6 ( String one ) {
+        String two = 2 + one;
+        return two;
+    }
 }

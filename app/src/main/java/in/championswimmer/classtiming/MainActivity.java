@@ -20,6 +20,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         Log.d(TAG, "before anything" + SystemClock.uptimeMillis());
+
         TimingTestOne tto1 = new TimingTestOne();
         Log.d(TAG, "after first" + SystemClock.uptimeMillis());
 
