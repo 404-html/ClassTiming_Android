@@ -12,13 +12,13 @@ public class MainActivity extends ActionBarActivity {
     public static final String TAG = "TimingTest";
 
     static {
-        Log.d(TAG, "before anything" + SystemClock.uptimeMillis());
+        Log.d(TAG, "before anything static" + SystemClock.uptimeMillis());
 
         TimingTestOne tto01 = new TimingTestOne();
-        Log.d(TAG, "after first" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after first  static" + SystemClock.uptimeMillis());
 
         TimingTestOne tto02 = new TimingTestOne();
-        Log.d(TAG, "after second" + SystemClock.uptimeMillis());
+        Log.d(TAG, "after second  static" + SystemClock.uptimeMillis());
     }
 
 
