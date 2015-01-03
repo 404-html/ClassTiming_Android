@@ -1,4 +1,4 @@
-package in.championswimmer.classtiming;
+package in.championswimmer.classtiming.tto;
 
 import android.util.Log;
 
@@ -7,6 +7,10 @@ import android.util.Log;
  */
 public class TimingTestOne {
     public static final String TAG = "TimingTest";
+
+    static {
+        Log.d (TAG, "tto static called");
+    }
 
 
     int someFunction1 ( int one ) {
@@ -60,6 +64,7 @@ public class TimingTestOne {
     public static void main(String[] args) {
         Log.d(TAG, "main called");
         display();
+        gen1(); gen10(); gen100();
 
     }
 

@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import in.championswimmer.classtiming.tto.TimingTestOne;
+
 
 public class MainActivity extends ActionBarActivity {
     public static final String TAG = "TimingTest";
